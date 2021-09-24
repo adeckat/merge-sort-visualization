@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('Usign.png');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title"
+        style="color:  red; font-family: Arial, Helvetica, sans-serif; text-align: center; margin-bottom: 0;">
+        MERGE SORT ALGORITHM VISUALIZATION USING D3JS</h1>
+
+    <h2 class="title1"
+        style="color: black;  font-family: Arial, Helvetica, sans-serif; text-align: center; line-height: 80%; font-size: 30px; margin-top: 0;">
+        <br>Professor: Dr. Ben Jones<br>
+        <br>Course : CS6017<br>
+        <br>Student : Harold Truong - Nga Huynh<br>
+    </h2>
+
+    <br><br>
+    <div style="text-align:center; justify-content: center; line-height: 150%; margin-bottom:0;">
+        <svg id="canvas"></svg>
+
+    </div>
+
+    <div id="info"
+        style="text-align: center; color: black; font-family: Arial, Helvetica, sans-serif; font-size: 200%; margin-top: 15px;">
+        Data is unsorted</div>
+
+    <div id="buttons" style="text-align: center; margin-top: 15px;">
+        <button id="sortBtn" onclick="visualization()"
+            style="padding: 10px 20px; text-align: center; font-size: 18px; border-radius: 12px; cursor: pointer;">Start
+            Sorting</button>
+        <button id="resetBtn" onclick="reset()"
+            style="padding: 10px 20px; text-align: center; font-size: 18px; border-radius: 12px; cursor: pointer;">Reset</button>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="mergeSort.js"></script>
+</body>
+
+</html>
